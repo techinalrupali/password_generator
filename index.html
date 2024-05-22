@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Password Generator</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <div class="password-box">
+            <h3 class="password">l@45R&C(#BK</h3>
+            <div class="copy-btn">
+                <i class="fa-regular fa-copy" id="copy-btn"></i>
+                <span>Copied</span> 
+            </div>
+        </div>
+        <div class="checkboxes-box">
+            <div class="uppercase">
+                <input type="checkbox" name="" id="uppercase">
+                <span>Uppercase</span>
+            </div>
+            <div class="lowercase">
+                <input type="checkbox" name="" id="" checked>
+                <span>Lowercase</span>
+            </div>
+            <div class="numbers">
+                <input type="checkbox" name="" id="numbers">
+                <span>Numbers</span>
+            </div>
+            <div class="symbols">
+                <input type="checkbox" name="" id="symbols">
+                <span>Symbols</span>
+            </div>
+        </div>
+        <div class="password-length">
+            <h3>Password-Length</h3>
+            <input type="range" min="6" max="32" value="12" oninput="getPassLengthValue()">
+            <div class="length-value">12</div>
+        </div>
+        <button class="generate-btn">Generate Password</button>
+    </div>
+
+    <!-- Js File -->
+    <script src="Password.js"></script>
+
+    <!-- Icon -->
+    <script src="https://kit.fontawesome.com/d6f2a9f07b.js" crossorigin="anonymous"></script>
+</body>
+</html>
